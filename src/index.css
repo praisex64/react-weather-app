@@ -1,0 +1,103 @@
+ * {
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0; 
+ }
+
+ body {
+  font-family: sans-serif;
+  color: white; 
+ }
+
+ p {
+  font-size: 1.6rem;
+ }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  .App {
+    width: 100%; 
+    height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .App:before {
+    content: ''; 
+    background: url(./assets/weather.jpg) no-repeat center center/cover; 
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    left: 0; 
+    z-index: -1;
+
+  }
+
+
+.container {
+  max-width: 700px;
+  height: 490px; 
+  margin: auto; 
+  padding: 0 1rem; 
+  position: relative;
+  top: 10%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.App .top {
+    width: 100%; 
+    margin: 1rem auto; 
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%; 
+  margin: 1rem auto; 
+  padding: 1rem; 
+  border-radius: 12px;
+  background-color: rgba(255,255,255, 0.2);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+button {
+  background-color: #0e70a8;
+  border: none; 
+  color: white;
+  padding: 15px 32px; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+.App .search {
+  text-align: center;
+  padding: 1rem; 
+}
+
+
+.App input {
+  padding: .7rem 1.5rem; 
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid grey; 
+  outline: none; 
+}
+
+
+
+
